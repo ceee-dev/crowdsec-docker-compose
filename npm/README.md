@@ -9,8 +9,7 @@ This example contains multiple containers :
 Before running the example, you need to create a secure database passwords within the `.env` file. You can do this by running the following command :
 
 ```bash
-echo "DATABASE_PASSWORD=$(tr -dc A-Za-z0-9 </dev/urandom | head -c 32)" > .env
-echo "DATABASE_PASSWORD=$(tr -dc A-Za-z0-9 </dev/urandom | head -c 32)" >> .env
+create-env.sh
 ```
 
 **Prerequisites:** [Docker](https://docs.docker.com/engine/install/) / [Docker Compose](https://docs.docker.com/compose/install/)
