@@ -35,7 +35,7 @@ services:
     networks:
       npm:
     environment:
-      MYSQL_ROOT_PASSWORD: 'npm'
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: 'npm'
       MYSQL_USER: 'npm'
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
